@@ -19,7 +19,6 @@ public class ProcessoSeletivo {
         for (String candidatoLigacao: candidatos){
 
             for (int tentativas = 0; tentativas < 3; tentativas++) {
-
                 if (ligacao) {
                     System.out.println("Conseguimos contato com " + candidatoLigacao + " após " + (tentativas + 1) + " tentativa(s).");
                     break;
@@ -27,7 +26,6 @@ public class ProcessoSeletivo {
                     System.out.println("Não conseguimos contato com " + candidatoLigacao + ", número máximo de tentativas " + (tentativas + 1) + ".");
                     ligacao = atender();
                 }
-
             }
         }
     }
